@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BhanuMithun Fitness Studio</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css"> <!--link:css-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<style>
+    /*CSS Reset*/
+    body {
+        color:white; /*to view text from  black background in webpage*/
+        margin: 0px;
+        padding: 0px;
+        background: url('images/abs-1850926_1920.jpg');
+        height: 1200px;
+    }
+    .left{
+      display: inline-block; /*as we set it to inline it stays left and block is to set width*/
+      /* border:2px solid yellowgreen; */
+      position: absolute;
+      left:30px;
+      top:20px;
+    }
+    .left img{
+        width:100px;
+        /* filter: invert(100%);    if image is black it will become white  by using invert */
+    }
+    .left div{
+        color:yellowgreen;
+        text-align: center;
+        line-height:19px;
+        font-size: 18px;
+    }
+    .mid{
+        
+         display:block;
+         width:400px;
+         margin: 20px auto; /*to make mid div to center*/
+         /* border:2px solid rgb(9, 207, 237); */
+         
+    }
+    
+    .right{
+        position:absolute;/*even after using inline-block property right div didnt moved so absolute works */
+        right:34px;
+        top:25px;
+        display: inline-block;
+        /* border:2px solid rgba(246, 7, 138, 0.819); */
+    }
+    .navbar{
+        display:inline-block;/*ul list will be in one line and we can set width & height*/
+        
+    }
+    .navbar li {
+        display: inline-block;
+        font-size: 15px;
+    }
+    .navbar li a{
+        color:white;
+        text-decoration: none;
+        padding:15px 5px;
+
+    }
+    .navbar li a:hover,.navbar li a:active{
+        text-decoration: underline;
+        color:rgb(101, 99, 99);
+
+    }
+    .btn{
+        margin:0px 9px;
+        font-size:11px;
+        background-color: black;
+        color:white;
+        padding:13px 6px;
+        border:3px solid grey;
+        border-radius: 8px;
+        cursor:pointer; /*while hovering on button to see hand symbol*/
+    }
+    .btn:hover{
+        background-color: rgb(240, 153, 224);
+
+    }
+    .container{
+        border:2px solid purple;
+        font-size: 10px;
+        margin:90px 45px;
+        padding:40px 15px;
+        width:33%;
+        border-radius: 9px;
+    }
+    .form-group input {
+        font-family: "Trirong", serif;
+        text-align: center;
+        display: block;
+        width:254px;
+        padding:4px;
+        border:3px solid rgb(20, 162, 162);
+        margin:6px auto;
+        font-size:12px ;
+        border-radius:9px ;
+
+    }
+    .container h1{
+        text-align: center;
+        
+    }
+    .container button{
+        display: block;
+        width:230px;
+        margin:10px auto;
+        font-size: 15px;      
+    }
+   
+</style>
+
+<body>
+    <header class="header">
+        <!--Left box for logo-->
+       <div class="left">
+        <img src="images/download (1).jpg" alt="MB'sGym-Logo" height="80" width="0">
+        <div>MB's Fitness</div>
+       </div>
+       <!--Mid box for navbar-->
+       <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">AboutUs </a></li>
+          <li><a href="#">FitnessCalculator</a></li>
+          <li><a href="#">ContactUs</a></li>
+        </ul>
+       </div>
+       <!--Right box for buttons-->
+       <div class="right">
+        <button class="btn">Call Us</button>
+        <button class="btn">Email Us</button>
+       </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Hyderabad now</h1>
+        <form action="noaction.php">       <!--bcse we are not doing backend right now we cannot fill form we need backend to fill form-->
+         <!--div.form-group -->
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Name">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Age">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Gender">
+         </div>
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter Your Locality">
+         </div>
+         <button class="btn">Submit</button>
+        </form> 
+    </div>
+</body>
+
+</html>
+<!--i want to open a gym at delhi,i would like people to come to my gym then i will make such website
+suppose i purchased domain as mbfitness.com  and then i will put this page in php then we fill details and 
+put it in my database and then run the advertisement of this page then i will run the advertisement
+targeting delhi-->
